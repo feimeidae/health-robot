@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>健康重启计划 · 24小时人生模拟器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-sky="night">
+
+<div id="app">
+  <!-- 顶部状态栏：时钟 + 4 个指标 -->
+  <header id="hud" class="hidden">
+    <div class="clock-wrap">
+      <div class="clock"><div class="hand" id="hand"></div></div>
+      <div class="time" id="timeText">06:30</div>
+    </div>
+    <div class="meters">
+      <div class="meter"><span>⚡精力</span><div class="bar"><i id="m-energy"></i></div></div>
+      <div class="meter"><span>🥗饮食</span><div class="bar"><i id="m-diet"></i></div></div>
+      <div class="meter"><span>🦴活力</span><div class="bar"><i id="m-body"></i></div></div>
+      <div class="meter"><span>😊心情</span><div class="bar"><i id="m-mood"></i></div></div>
+    </div>
+  </header>
+
+  <!-- 所有页面都由 JS 渲染到这里 -->
+  <main id="stage"></main>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
